@@ -1,0 +1,11 @@
+{
+  "name": "phan2m/lara-websocket",
+  "type": "library",
+  "license": "MIT",
+  "description": "Lara websocket protocol kernel",
+  "autoload": {
+    "psr-4": {
+      "Lara\\WebSocket\\": "src/"
+    }
+  }
+}

@@ -5,7 +5,10 @@
   "description": "Lara websocket application kernel",
   "autoload": {
     "psr-4": {
-      "Lara\\Fundation\\": "src/"
+      "Lara\\Foundation\\": "src/"
     }
+  },
+  "require": {
+    "monolog/monolog": "1.9.*"
   }
 }

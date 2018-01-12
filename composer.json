@@ -1,6 +1,6 @@
 {
     "name": "phan2m/lara",
-    "description": "Franework on Lara core",
+    "description": "Framework on Lara core",
     "type": "project",
     "authors": [
         {
@@ -11,7 +11,10 @@
     "minimum-stability": "stable",
     "require": {
         "php": "~7.1",
-        "cboden/ratchet": "~0.4"
+        "cboden/ratchet": "~0.4",
+        "illuminate/container":"5.3.*",
+        "illuminate/config": "5.3.*",
+        "illuminate/support": "5.3.*"
     },
     "require-dev": {
         "squizlabs/php_codesniffer":"~2.0",
@@ -25,7 +28,8 @@
     "extra": {
         "merge-plugin":{
             "require":[
-                "src/Foundation/composer.json"
+                "src/Foundation/composer.json",
+                "src/WebSocket/composer.json"
             ]
         }
     },
