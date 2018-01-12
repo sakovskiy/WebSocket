@@ -1,0 +1,11 @@
+{
+  "name": "phan2m/lara-foundation",
+  "type": "library",
+  "license": "MIT",
+  "description": "Lara websocket application kernel",
+  "autoload": {
+    "psr-4": {
+      "Lara\\Fundation\\": "src/"
+    }
+  }
+}

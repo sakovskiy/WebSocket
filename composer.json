@@ -8,9 +8,10 @@
             "email": "sakovskiy.sergiy@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
-        "php": "~7.1"
+        "php": "~7.1",
+        "cboden/ratchet": "~0.4"
     },
     "require-dev": {
         "squizlabs/php_codesniffer":"~2.0",
@@ -24,7 +25,7 @@
     "extra": {
         "merge-plugin":{
             "require":[
-                "src/Fundation/composer.json"
+                "src/Foundation/composer.json"
             ]
         }
     },
