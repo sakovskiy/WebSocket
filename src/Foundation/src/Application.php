@@ -28,6 +28,11 @@ class Application extends Container
     private $providers = [];
 
     /**
+     * @var \App\Exception\ExceptionHandler|null
+     */
+    private $exceptionHandler;
+
+    /**
      * Application constructor.
      * @param string $basePath
      */
@@ -86,6 +91,27 @@ class Application extends Container
         }
     }
 
+
+    /**
+     * @param ExceptionHandler $handler
+     * @return $this
+     */
+    public function registerExceptionHandler(ExceptionHandler $handler)
+    {
+        $this->exceptionHandler = $handler;
+        return $this;
+    }
+
+    /**
+     * @param \Throwable $e
+     */
+    public function throw(\Throwable $e)
+    {
+        if($this->exceptionHandler != null){
+            $this->exceptionHandler->handle($e);
+        }
+    }
+    
     /**
      * @return string
      */
@@ -93,8 +119,7 @@ class Application extends Container
     {
         return $this->basePath . '/config';
     }
-
-
+    
     /**
      * @return void
      */

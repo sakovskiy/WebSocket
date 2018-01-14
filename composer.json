@@ -28,8 +28,7 @@
     "extra": {
         "merge-plugin":{
             "require":[
-                "src/Foundation/composer.json",
-                "src/WebSocket/composer.json"
+                "src/Foundation/composer.json"
             ]
         }
     },

@@ -52,7 +52,6 @@ class ComposerStaticInit8fb305dcf39b66dd22f6e4b1459d4ed0
         ),
         'L' => 
         array (
-            'Lara\\WebSocket\\' => 15,
             'Lara\\Foundation\\' => 16,
         ),
         'I' => 
@@ -149,10 +148,6 @@ class ComposerStaticInit8fb305dcf39b66dd22f6e4b1459d4ed0
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
-        ),
-        'Lara\\WebSocket\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src/WebSocket/src',
         ),
         'Lara\\Foundation\\' => 
         array (
